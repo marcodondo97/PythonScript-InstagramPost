@@ -15,6 +15,10 @@ The Instagram Post Generator is a Python-based application that leverages AWS La
 
 The application is designed to run both locally for testing and on AWS Lambda for production deployment.
 
+<div align="center">
+  <img src="docs/img/api-flow.png" alt="instagrampost api flow" width="700"/>
+</div>
+
 ### Getting Started
 
 To run this application locally, follow these steps:
@@ -63,6 +67,9 @@ python -c "from lambda_function import generate_instagram_post; result = generat
 ### AWS Lambda Deployment
 
 This section explains how to deploy the application to [AWS Lambda](https://aws.amazon.com/lambda/) for automated execution and how to schedule it using [AWS EventBridge](https://aws.amazon.com/eventbridge/).
+<div align="left">
+  <img src="docs/img/aws-flow.png" alt="instagrampost aws flow" width="300"/>
+</div>
 
 #### Prerequisites
 - AWS CLI configured with appropriate permissions
@@ -148,6 +155,10 @@ Replace `YOUR_ACCOUNT_ID` with your AWS account ID and `YOUR_BUCKET_NAME` with y
 2. Create a new test event (empty JSON `{}`)
 3. Click "Test" to verify the function works correctly
 
+<div align="left">
+  <img src="docs/img/lambda-config.png" alt="instagrampost aws lambda config" width="400"/>
+</div>
+
 #### Step 7: Configure EventBridge Schedule
 
 1. Go to AWS EventBridge Console
@@ -161,3 +172,15 @@ Replace `YOUR_ACCOUNT_ID` with your AWS account ID and `YOUR_BUCKET_NAME` with y
 5. Click "Create"
 
 The function will now automatically execute according to your schedule.
+
+<div align="left">
+  <img src="docs/img/eventbridge-config.png" alt="instagrampost aws eventbridge config" width="400"/>
+</div>
+
+## Result
+Instagram post
+
+<div align="left">
+  <img src="docs/img/instagrampost.png" alt="instagrampost posted" width="200"/>
+</div>
+
