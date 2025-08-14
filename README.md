@@ -1,4 +1,4 @@
-# Instagrampost
+# Instagrampost Python script
 
 ## Introduction
 
@@ -178,7 +178,6 @@ The function will now automatically execute according to your schedule.
 </div>
 
 ## Result
-Instagram post
 
 <div align="left">
   <img src="docs/img/instagrampost.png" alt="instagrampost posted" width="200"/>
