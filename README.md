@@ -19,7 +19,7 @@ The application is designed to run both locally for testing and on AWS Lambda fo
   <img src="docs/img/api-flow.png" alt="instagrampost api flow" width="700"/>
 </div>
 
-### Getting Started
+## Getting Started
 
 To run this application locally, follow these steps:
 
@@ -64,9 +64,8 @@ python -c "from lambda_function import generate_instagram_post; result = generat
 
 ## Deploy
 
-### AWS Lambda Deployment
-
-This section explains how to deploy the application to [AWS Lambda](https://aws.amazon.com/lambda/) for automated execution and how to schedule it using [AWS EventBridge](https://aws.amazon.com/eventbridge/).
+This Python script can be executed as a cron job. We use [AWS Lambda](https://aws.amazon.com/lambda/), a serverless computing service that allows you to run code without provisioning or managing servers, to execute the script on demand.  
+To automate and schedule its execution, we use [AWS EventBridge](https://aws.amazon.com/eventbridge/), a service that lets you trigger tasks automatically based on time-based rules or specific events from AWS services or custom applications.
 <div align="left">
   <img src="docs/img/aws-flow.png" alt="instagrampost aws flow" width="300"/>
 </div>
