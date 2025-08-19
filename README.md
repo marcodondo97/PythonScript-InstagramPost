@@ -26,7 +26,7 @@ To run this application locally, follow these steps:
 **Clone the repository**
 ```bash
 git clone https://github.com/marcodondo97/PythonScript-instagrampost.git
-cd instagrampost
+cd PythonScript-InstagramPost
 ```
 
 **Configure Instagram Profile**
